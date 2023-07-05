@@ -1,6 +1,7 @@
 package com.zsycx.reggie;
 
 import lombok.extern.slf4j.Slf4j;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -12,6 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Slf4j // lombok提供的日志注解
 @SpringBootApplication // SpringBoot项目核心注解
+@MapperScan(basePackages = "") // 扫描指定目录Mapper
 public class ReggieTakeOutApplication {
 
     public static void main(String[] args) {
